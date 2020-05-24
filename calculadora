@@ -1,0 +1,34 @@
+
+import java.util.Scanner;
+public class calculadora1 {
+
+    public static void main(String[] args) {
+        int indice;
+        Scanner leer = new Scanner(System.in);
+        metodos cal = new metodos();
+
+        System.out.println("que tal si desea sumar dos numeros ingrese el 1, si desea restar dos numeros igrese el 2, si desea multiplicar dos numeros ingrese el 3, si desea dividir dos numeros ingrese el 4, si desea saber cual numeros es mayor ingrese el 5,si desea calcular una potencia ingrese el 6 si desea salir ingrese el 7,");
+        indice = leer.nextInt();
+        if (indice == 1) {
+            cal.leernumeros();
+            cal.suma1();
+        } else if (indice == 2) {
+            cal.leernumeros();
+            cal.resta1();
+        } else if (indice == 3) {
+            cal.leernumeros();
+            cal.multiplicacion1();
+        } else if (indice == 4) {
+            cal.leernumeros();
+            cal.division1();
+        } else if (indice == 5) {
+            cal.leernumeros();
+            cal.mayor1();
+        } else if (indice == 6) {
+            cal.leernumeros();
+            cal.potencia1();
+        } else if (indice == 7) {
+            cal.salir1();
+        }
+    }
+}
