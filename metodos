@@ -1,0 +1,58 @@
+import java.util.Scanner;
+public class metodos {
+    double suma;
+    double resta;
+    double mutltiplicacion;
+    double division;
+    double mayor;
+    int potencia;
+    double a  ;
+    double b  ;
+    int c;
+    int d;
+    Scanner leer = new Scanner(System.in);
+    public void suma1() {
+        suma = a + b;
+
+    }
+
+    public void resta1() {
+        resta = a - b;
+    }
+
+    public void multiplicacion1() {
+        mutltiplicacion = a * b;
+    }
+
+    public void division1() {
+        division = a / b;
+    }
+
+    public void mayor1() {
+        if (a >= b) {
+            mayor = a;
+        } else {
+            mayor = b;
+        }
+    }
+
+    public void potencia1() {
+        potencia = (c) ^ (d);
+
+
+    }
+
+    public void salir1() {
+        System.out.println("gracias por usar este programa");
+
+
+
+
+    }
+    public void leernumeros(){
+        a = Double.parseDouble(leer.nextLine());
+        b = Double.parseDouble(leer.nextLine());
+    }
+}
+
+
